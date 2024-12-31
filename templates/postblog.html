@@ -1,0 +1,32 @@
+{% extends "home.html" %}
+{% block title %}
+<title>post blog</title>
+{% endblock title %}
+{% block body %}
+<h1 style ="display: flex; justify-content: center ;align-items: center; padding-top: 20px;padding-bottom: 30px;">create your blog</h1>
+<div style="width: 50%; padding: 100px;">    
+    <form method="POST" action="/postblog">
+       
+        
+        <div class="form-group">
+            <label for="title">title</label>
+            <input type="text" class="form-control" id="inputAddress" name ="title" placeholder="enter the title of the blog ">
+          </div>
+          <div class="form-group">
+            <label for="writer">writer_name</label>
+            <input type="text" class="form-control" id="inputAddress2" name ="writer_name" placeholder="enter the writer_name">
+          </div>
+          <div class="form-group">
+            <label for="contact">contact_number</label>
+            <input type="number" class="form-control" id="inputAddress2" name ="contact_number" placeholder="enter the number">
+          </div>
+          <div class="form-group">
+            <label for="blog">blog_details</label>
+            <input type="text" class="form-control" id="inputAddress2" name ="blog_details" placeholder="enter the bolg">
+          </div>
+          
+        
+       
+        <button type="submit" class="btn btn-primary" herf="/">post blog</button>
+      </form>
+{% endblock body %}

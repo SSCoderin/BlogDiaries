@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+{% block title %}
+<title>details</title>
+{% endblock title %}
+{% block body %}
+
+<a href="/edit/{{blog_data.id}}" class="btn btn-primary">Edit</a>
+<a href="/delete/{{blog_data.id}}" class="btn btn-danger">Delete Blog</a>
+
+<h1>{{blog_data.title}}</h1>
+<h3>{{blog_data.blog_details}}</h3>
+<h2>{{blog_data.contact_number}}</h2>
+
+{% endblock body %}
